@@ -5,15 +5,14 @@
  import Form from './components/Form';
  import './components/HelloWorld'
  import HelloWorld from './components/HelloWorld';
- import Item from './components/Item';
+// import Item from './components/Item';
  import List from './components/List';
  import OutraLista from './components/OutraLista';
  import Pessoa from './components/Pessoa';
  import SayMyName from './components/SayMyName';
  import SeuNome from './components/SeuNome';
  import Saudacao from './components/Saudacao';
- import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import { Routes } from 'react-router';
+ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
  import Home from './pages/Home';
  import Empresa from './pages/Empresa';
  import Contato from './pages/Contato';
@@ -75,7 +74,7 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route exact path='/' element={<Home />} />
+          <Route exact path='/' Component={Home} />
           <Route exact path='/Empresa' element={<Empresa />} />
           <Route exact path='/Contato' element={<Contato />} />
         </Routes>

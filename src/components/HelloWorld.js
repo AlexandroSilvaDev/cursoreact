@@ -1,4 +1,5 @@
 import Frase from "./Frase"
+import React from 'react'
 
 function HelloWorld()
 {

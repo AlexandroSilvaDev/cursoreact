@@ -1,4 +1,5 @@
 import Button from "./evento/Button"
+import React from 'react'
 
 function Evento({numero})
 {
