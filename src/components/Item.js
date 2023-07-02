@@ -3,10 +3,12 @@ import PropTypes from 'prop-types'
 function Item({marca, ano_lancamento})
 {
     return(
-        <>
+        <div>
+        <ul>
             <li>{marca} - {ano_lancamento}</li>
+        </ul>
             <p>Teste</p>
-        </>
+        </div>
     )
 }
 
